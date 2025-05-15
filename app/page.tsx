@@ -1,103 +1,92 @@
+import { IconCloud } from "@/components/magicui/icon-cloud";
 import Image from "next/image";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import Link from "next/link";
+import Footer from "@/components/footer"
+import { SparklesText } from "@/components/magicui/sparkles-text";
+import { HyperText } from "@/components/magicui/hyper-text";
+import { ShineBorder } from "@/components/magicui/shine-border";
+import { RainbowButton } from "@/components/magicui/rainbow-button";
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "java",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "nextdotjs",
+  "amazonaws",
+  "firebase",
+  "nginx",
+  "vercel",
+  "docker",
+  "git",
+  "github",
+  "visualstudiocode",
+  "figma",
+  "mongodb",
+  "macos",
+  "ubuntu",
+  "wordpress",
+  "apache",
+];
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  );
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div className="relative overflow-y-auto overflow-x-hidden">
+      <div className="flex flex-col items-center w-full pt-1 md:pt-2 relative">
+        <div className="absolute top-8 left-1/2 -translate-x-1/2 z-0 w-[180px] h-[180px] flex justify-center items-center">
+          <IconCloud images={images} />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="relative z-30 top-10">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/img.png"
+            alt="Logo"
+            width={130}
+            height={130}
+            className="rounded-full object-cover aspect-square border-[2px] border-solid border-[white] p-[2px] [transition:0.3s] hover:border-[black]"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+        <SparklesText className="text-4xl md:text-4xl p-2 font-bold mb-2 mt-20 md:mt-22 text-center">Welcome to My Bio</SparklesText>
+        <HyperText className="text-base md:text-lg text-white py-4 mt-2 text-center">Jittiphat Somsai</HyperText>
+        <div className="w-full max-w-80 md:max-w-md h-full rounded-4xl bg-slate-300/10 backdrop-blur-lg p-4 md:p-6 mt-4">
+        <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+          <div className="flex flex-col items-center text-center">
+            <Link href={"https://jittiphat.site"} target="_blank" rel="noopener noreferrer">
+              <InteractiveHoverButton className="mt-4 w-full max-w-xs min-w-[220px] text-emerald-500">Main Website</InteractiveHoverButton>
+            </Link>
+            <Link href={"https://status.jittiphat.site"} target="_blank" rel="noopener noreferrer">
+              <InteractiveHoverButton className="mt-2 w-full max-w-xs min-w-[220px] text-red-500">Status</InteractiveHoverButton>
+            </Link>
+            <Link href={"/project"}>
+              <InteractiveHoverButton className="mt-2 w-full max-w-xs min-w-[220px]">My Projects</InteractiveHoverButton>
+            </Link>
+            <Link href={"/link"}>
+              <InteractiveHoverButton className="mt-2 w-full max-w-xs min-w-[220px]">My Link</InteractiveHoverButton>
+            </Link>
+            <Link href={"/social"}>
+              <InteractiveHoverButton className="mt-2 w-full max-w-xs min-w-[220px]">My Social</InteractiveHoverButton>
+            </Link>
+            <Link href={"/accessory"}>
+              <InteractiveHoverButton className="mt-2 w-full max-w-xs min-w-[220px]">My Accessory</InteractiveHoverButton>
+            </Link>
+
+            <Link href={"https://ezdn.app/MANNEZ"} target="_blank" rel="noopener noreferrer">
+              <RainbowButton className="mt-2 w-full max-w-xs min-w-[220px] text-blue-400 hover:text-white">
+                <Image src="/ezdn.png" alt="Easy Donate" width={24} height={24} className="mr-2" />
+                Donate Me
+              </RainbowButton>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
