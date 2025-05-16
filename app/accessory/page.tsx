@@ -68,7 +68,7 @@ export default function Accessory() {
                                 Mouse Nubwo NM-92M Macro
                             </RainbowButton>
                         </Link>
-                        <Link href={"https://www.samsung.com/th/smartphones/galaxy-a/galaxy-a24-black-128gb-sm-a245fzkvthl/"}>
+                        <Link href={"https://www.samsung.com/th/smartphones/galaxy-a/galaxy-a24-black-128gb-sm-a245fzkvthl/"} target="_blank" rel="noopener noreferrer">
                             <RainbowButton className="mt-2 w-full max-w-xs min-w-[285px] md:min-w-[320px] flex items-center justify-center hover:text-[#1428A0]">
                                 Samsung Galaxy A24
                             </RainbowButton>
