@@ -68,7 +68,7 @@ export default function Social() {
                     <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
                     <div className="flex flex-col items-center text-center">
                         <Link
-                            href={"/"}
+                            href={"https://www.facebook.com/Jittiphatz4966"}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -78,7 +78,7 @@ export default function Social() {
                             </RainbowButton>
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"https://www.instagram.com/mannez_xyz/"}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -88,7 +88,7 @@ export default function Social() {
                             </RainbowButton>
                         </Link>
                         <Link
-                            href={"/social"}
+                            href={"http://github.com/Jittiphatz"}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -98,7 +98,7 @@ export default function Social() {
                             </RainbowButton>
                         </Link>
                         <Link
-                            href={"/social"}
+                            href={"http://discord.com/users/776836808259534878"}
                             target="_blank"
                             rel="noopener noreferrer"
                         >

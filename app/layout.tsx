@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Jittiphat - Bio",
   description: "Jittiphat's bio website",
   icons: {
-    icon: '/crayon.png', // ไฟล์ favicon.ico ใน public folder
+    icon: '/crayon.png',
   },
 };
 
@@ -19,6 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:url" content="https://bio.jittiphat.site/" />
+      <meta property="og:site_name" content="bio.jittiphat.site" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/Screenshot.png" />
+      <meta property="og:image:alt" content="Jittiphat Bio Preview" />
       <body
         className={`antialiased`}
       >

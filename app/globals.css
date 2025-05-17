@@ -166,16 +166,16 @@ body {
   background-image: url('/bg.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: repeat;
+  background-attachment: scroll;
   font-family: 'IBM Plex Sans Thai', sans-serif;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body::before {
-  content: "/bg.jpg";
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -187,6 +187,7 @@ body::before {
   background-repeat: no-repeat;
   filter: blur(7px);
   z-index: -1;
+  transform: scale(1.1);
 }
 
 ::selection {
