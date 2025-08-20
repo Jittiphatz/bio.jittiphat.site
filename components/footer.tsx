@@ -13,14 +13,14 @@ const Footer = () => (
             <Link href="https://www.instagram.com/mannez_xyz/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-5 h-5 hover:text-purple-500 transition" />
             </Link>
-            <Link href="mailto:Jittiphat@jittiphat.site" target="_blank" rel="noopener noreferrer">
+            <Link href="mailto:Jittiphat@jittiphat.space" target="_blank" rel="noopener noreferrer">
                 <Mail className="w-5 h-5 hover:text-red-400 transition" />
             </Link>
         </div>
         <span>© {new Date().getFullYear()} Jittiphat Somsai. All rights reserved.</span>
         <span>
             Made with <span className="text-pink-500"><Heart className="w-4 h-4 inline hover:scale-120 transition-all duration-500" /></span> | 
-            Powered by <a className="hover:text-black" href="https://nextjs.org">Next.js</a> & <a className="hover:text-red-400" href="https://magicui.design/">Magic UI</a>
+            Powered by <a className="hover:text-slate-500" href="https://nextjs.org">Next.js</a> & <a className="hover:text-pink-400" href="https://magicui.design/">Magic UI</a>
         </span>
     </footer>
 );
