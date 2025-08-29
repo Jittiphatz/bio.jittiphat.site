@@ -64,9 +64,6 @@ export default function Project() {
                         <Link href={"https://jittiphat.space"} target="_blank" rel="noopener noreferrer">
                             <RainbowButton className="mt-4 w-full max-w-xs min-w-[260]  md:min-w-[260px] hover:text-emerald-500"><Globe className="mr-2"/>Main Website</RainbowButton>
                         </Link>
-                        <Link href={"https://portfolio.jittiphat.space"} target="_blank" rel="noopener noreferrer">
-                            <RainbowButton className="mt-2 w-full max-w-xs min-w-[260] md:min-w-[260px] hover:text-emerald-700"><Globe className="mr-2"/>Portfolio Website</RainbowButton>
-                        </Link>
                         <Link href={"https://cert.jittiphat.space"} target="_blank" rel="noopener noreferrer">
                             <RainbowButton className="mt-2 w-full max-w-xs min-w-[260] md:min-w-[260px] hover:text-red-500"><Globe className="mr-2"/>Certification Website</RainbowButton>
                         </Link>
